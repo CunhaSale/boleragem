@@ -1,0 +1,195 @@
+/*RESET*/
+*{margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; color: #fff; box-sizing: border-box; font-family: 'Raleway', sans-serif;}
+body{background-color: #000;} /*#111*/
+a{text-decoration: none;}
+ul{list-style: none;}
+img{max-width: 100%;}
+h1, h2, h3, h4{text-shadow: 2px 2px #000;}
+.container{width: 100%; padding: 3% 4%; float: left;}
+.sub-title{text-align: left;}
+.sub-title h2{font-size: 2em; color: #aaa; font-weight: 700;}
+.sub-title h2:after{content: ""; width: 100%; margin-top: 10px; margin-bottom: 10px; height: 1px; background: linear-gradient(to right, #f1c40f, #aaa 90%); display: block;}
+.sub-title h3{font-size: 1.2em; color: #f1c40f; font-weight: 700;}
+/*HEADER*/
+.head-container{background-color: #000; position: fixed; top: 0; z-index: 1; opacity: 0.9;}
+.logo{display: none;}
+.logo-mobile{width: 56px; height: 56px;}
+/*.logo{width: 56px; height: 56px; float: left; background: url(../img/Logo.png) center center/56px no-repeat; font-size: 0;}*/
+.btn-menu{width: 56px; height: 56px; float: right; text-align: center; color: #fff; border-radius: 56px; cursor: pointer; background-color: #222;}
+/*NAV*/
+.menu{display: none; width: 70%; height: 100%; position: fixed; background-color: rgba(0,0,0,0.9); top: 0; left: 0;}
+.btn-close{font-size: 1.5em; color: #fff; float: right; cursor: pointer; margin: 2% 3% 0 0;}
+.menu ul{width: 100%; float: left; text-align: center;}
+.menu li{padding: 1.5%;}
+.menu li a{font-size: 2em; color: #fff; padding: 1.5% 3%;}
+.menu li a:hover{border: 2px solid #222;}
+#shows, #ogrupo, #musicas, #fan, #contato{padding-top: 90px;}
+/*BANNER*/
+.banner-container{background: url(../img/background.jpg); text-align: center; height: 400px; margin-top: 74px; width: 100%;}
+.banner-title{width: 100%;}
+.banner-title h2, .banner-title h3{font-size: 2.5em; color: #fff; font-weight: 700;}
+.banner-title h3{font-size: 1.5em; font-weight: 500;}
+.social-icons{width: 100%; float: center; margin: auto;}
+.social-icons button{width: 56px; height: 56px; color: #fff; cursor: pointer; background-color: rgba(0,0,0,0.9); border-radius: 56px; border: 2px solid white;}
+.social-icons button:hover{border-color: #000;}
+/*SHOWS*/
+.content{width: 100%; background-color: #111; text-align: center; border-radius: 7px; margin-bottom: 4%; margin-top: 2%;}
+.content img{border-radius: 7px 7px 0 0;}
+.inner{padding: 7%;}
+.inner h2{font-size: 2em; color: #aaa; font-weight: 700;}
+.inner h3{font-size: 1.5em; color: #f1c40f; font-weight: 700; line-height: 1.5em; margin-top: 4%;}
+.inner h4{font-size: 1.2em; color: #aaa; margin-top: 2%;}
+/*OGRUPO*/
+.ogrupo-container{background: url(../img/background-contato.jpg) no-repeat; }
+.ogrupo-container p{font-size: 1.2em; margin-top: 2%; color: #aaa; line-height: 1.5em; text-indent: 1em;}
+/*MUSICAS*/
+.music-container{background: linear-gradient(to top, #111, #000 70%);}
+.content p{font-size: 1.2em; margin-top: 2%; color: #aaa; line-height: 1.5em; text-indent: 1em;}
+.content audio{margin-top: 4%; width: 100%;}
+.content iframe{width: 100%; margin-top: 2%;}
+#text, #video, #audio{text-align: left; background-color: transparent;}
+#video h3, #audio h3{font-size: 1.5em; color: #aaa; margin-top: 2%;}
+#video h4, #audio h4, #text h4{font-size: 1.2em; color: #aaa;}
+#text h4{margin-top: 2%; font-weight: 700; text-indent: 1em;}
+#play{color: #aaa; font-weight: 700; font-size: 2em; transform: rotate(-4deg); margin-left: 170px;}
+@font-face {
+      font-family: "CHAWP";
+      src: url("chawp.otf") format("truetype");
+      }
+.chawp-font{font-family: "chawp";} 
+/*AREAFAN*/
+.fan-container{background: linear-gradient(to bottom, #111, #000 70%); text-align: center;}
+div.tab {overflow: hidden; background-color: none; color: #fff; border-bottom: none; margin-top: 4%;}
+div.tab button {background-color: inherit; float: left; border: none; outline: none; cursor: pointer; padding: 14px 16px; transition: 0.3s; color: #aaa;}
+div.tab button:hover {background-color: #333;}
+div.tab button.active {background-color: none; border: 1px solid #ccc; border-bottom: none; color: #f1c40f;}
+.tabcontent {display: none; padding: 6px 12px; border-top: 1px solid #ccc; background-color: transparent; text-align: left; width: 100%; overflow: auto;}
+.fan-title h2, .fan-title h3, .tabcontent p{font-size: 2em; color: #aaa; margin-top: 1%; font-weight: 700;}
+.fan-title h3, .tabcontent p{line-height: 1.5em; font-size: 1.5em; font-weight: 500;}
+.tabcontent p{font-size: 1.2em; text-indent: 1em;}
+.tabcontent {-webkit-animation: fadeEffect 1s; animation: fadeEffect 2s; /* Fading effect takes 1 second */}
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+/*CONTATO*/
+.contato-container{background-color: #000;}	
+.contato, .form{padding: 3% 0; text-align: left; float: left;}
+.form{float: right;}
+.contato h2{font-weight: 700; font-size: 1.5em; font-family: 'Francois One', sans-serif; margin-left: 6px; color: #aaa;}
+.contato h3{color: #aaa; line-height: 1.5em;}
+.form h3{font-weight: 700; font-size: 1.5em; color: #aaa;}
+.font-italic{font-style: italic;}
+.form input[type=text]{width: 60%;  padding: 1%; border: 1px solid #ccc; border-radius: 4px; margin-top: 4%; color: #000;}
+.form input[type=email]{width: 38%; padding: 1%; border: 1px solid #ccc; border-radius: 4px; color: #000;}
+.form textarea{margin-top: 2%; width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; resize: vertical; height: 200px; color: #000;}
+.form input[type=submit]{float: right; background-color: #4caf50; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; margin-top: 20px;}
+input[type=submit]:hover{background-color: #45a049;}
+/*RODAPE*/
+.rodape-container{text-align: center;}
+#toTop{display: none; background-color: transparent; color: #fff; font-size: 1.2em; cursor: pointer;}
+.social-icons a{font-size: 1.5em; color: #aaa; margin-right: 3%;}
+.social-icons a:last-child{margin-right: 0;}
+.social-icons a:hover{color: rgb(255,255,255);}
+.copyright{margin-top: 2%; /*color: rgba(255,255,255,0.7)*/ color: #fff;}
+/*SLIDEANIM*/
+.slideanim {visibility:hidden;}
+	.slide {
+	    /* The name of the animation */
+	    animation-name: slide;
+	    -webkit-animation-name: slide; 
+	    /* The duration of the animation */
+	    animation-duration: 1s; 
+	    -webkit-animation-duration: 1s;
+	    /* Make the element visible */
+	    visibility: visible; 
+	}
+
+	/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+	@keyframes slide {
+	    0% {
+	        opacity: 0;
+	        transform: translateY(70%);
+	    } 
+	    100% {
+	        opacity: 1;
+	        transform: translateY(0%);
+	    } 
+	}
+	@-webkit-keyframes slide {
+	    0% {
+	        opacity: 0;
+	        -webkit-transform: translateY(70%);
+	    } 
+	    100% {
+	        opacity: 1;
+	        -webkit-transform: translateY(0%);
+	    }
+	}
+/*MOBILE FIRST*/
+/* SMALL DEVICES */
+@media screen and (min-width: 480px){
+	/*.logo{width: 214px; background: url(../img/logo-boleragem.png) center center/214px no-repeat;}*/
+	.logo-mobile{display: none;}
+	.logo{width: 214px; display: block; float: left;}
+	.banner-container{margin-top: 98px;}
+	#play{margin-left: 280px;}
+}
+/* TABLETS */
+@media screen and (min-width: 768px){
+	.content{width: 49%; float: left; margin-right: 2%; margin-bottom: 2%; background-color: #000;}
+	#texto{background: linear-gradient(to top, #111, #000 70%);}
+	.content img{height: 320px;}
+	.content:nth-child(3){margin-right: 0;}
+	.content iframe{height: 244px;}
+	#play{margin-left: 220px;}
+}
+/* MEDIUM DEVIDES - TABLETS & DESKTOPS */
+@media screen and (min-width: 960px){
+	.banner-title{width: 50%; margin-left: 150px;}
+	.banner-title h2{font-size: 3em;}
+	.banner-title h3{font-size: 2em;}
+	.content{width: 32%; margin-bottom: 0;}
+	.content:nth-child(2){margin-right: 2%;}
+	.content:nth-child(3){margin-right: 2%;}
+	.content:nth-child(4){margin-right: 0;}
+	.sub-title h2:after{width: 40%;}
+}
+/* LARGE DEVICES */
+@media screen and (min-width: 1024px){
+	.banner-container{margin-top: 114px;}
+	#play{margin-left: 180px;}
+	#texto{height: 350px;}
+	#audio{width: 30%; padding: 0;}
+	#video{width: 34%; padding: 0;}
+}
+/* LARGE DEVICES - WIDE SCREEN */
+@media screen and (min-width: 1280px){
+	.head-container{height: 85px; padding: 1% 4%;}
+	.btn-menu{display: none;}
+	.btn-close{display: none;}
+	.menu{width: auto; height: 56px; line-height: 56px; float: right; background-color: #000; display: block!important;
+	 position: static; margin-top: 10px;}
+	.menu li{padding: 0; float: left;}
+	.menu li a{font-size: 1em; color: #aaa; padding: 15px;}
+	.menu li a:hover{color: #fff; border: none;}
+	.banner-container{height: 506px; padding: 1% 4%; margin-top: 85px;}
+	.banner-title{width: 30%; margin-left: 180px;}
+	.banner-title h3{font-size: 1.5em;}
+	.content img{border: 6px solid #ddd; border-radius: 5px; height: 350px;}
+	.ogrupo-container{height: 532px;}
+	.ogrupo-container p{width: 60%;}
+	#texto{height: 330px;}
+	#texto p{width: 100%;}
+	.fan-container{padding: 3% 14%;}
+	#play{float: right; margin-right: 4%;}
+	.contato{width: 30%;}
+	.form{width: 70%;}
+    #toTop{display: block;}
+}
+
